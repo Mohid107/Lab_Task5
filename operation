@@ -1,1 +1,15 @@
+This is the file containing the identification of operations, done by Mohid (Repo Creator)
 
+| OP-ID    | Operation |          Purpose |
+
+| **OP-01** | `PerformSelfCheck` | Inspects and verifies the functional status of all essential sensors and environmental-control devices before startup. |
+| **OP-02** | `RegisterArtifact` | Records the incoming artifact's identification details and loads its specific environmental limits into the system. |
+| **OP-03** | `MonitorEnvironment` | Continuously tracks real-time sensor streams for temperature, humidity, light, vibration, door status, and power. |
+| **OP-04** | `AdjustTemperature` | Activates environmental-control mechanisms to correct and restore temperature when it drifts outside permitted limits. |
+| **OP-05** | `AdjustHumidity` | Regulates internal moisture control devices to bring humidity back within the artifact's specified range. |
+| **OP-06** | `VerifyEnvironmentalRecovery` | Checks live sensor readings to confirm whether temperature and humidity have successfully returned to safe ranges after correction. |
+| **OP-07** | `TriggerProtectionMode` | Enforces emergency safeguards (such as reducing light exposure and engaging backup controls) when environmental conditions fail to recover in time. |
+| **OP-08** | `HandleVibrationResponse` | Temporarily suspends risky operations and responds immediately upon detecting significant physical vibration. |
+| **OP-09** | `VerifyStabilizationPeriod` | Ensures that vibration levels stay below the safety threshold for a required duration before clearing a vibration event. |
+| **OP-10** | `SuspendConservation` | Halts active environmental regulation instantly if the chamber door is opened or unsafe triggers occur. |
+| **OP-11** | `ExecuteSafeShutdown` | Safely powers down and logs the incident if primary and backup power are lost during conservation. |
